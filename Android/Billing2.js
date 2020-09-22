@@ -35,7 +35,7 @@ setImmediate(function()
 	      
 	  Java.choose("android.content.Intent",{
       onMatch : function(instance) {
-      console.log(instance);
+      
 	  if(instance.getAction()=="com.android.vending.billing.InAppBillingService.BIND" ) 
 	  {
 	           
