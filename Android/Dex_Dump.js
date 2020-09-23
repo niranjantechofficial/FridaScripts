@@ -10,7 +10,7 @@ Interceptor.attach(Module.findExportByName("libart.so", "_ZN3art7DexFile10OpenMe
         file.write(Memory.readByteArray(begin, dex_size))
         file.flush()
         file.close()
-		console.log("Dex Dumped Successfully at /data/data/om.demo.script/");
+		console.log("Dex Dumped Successfully at /data/data/com.whatever.you.want/");
     },
     onLeave: function (retval) {
         if (retval.toInt32() > 0) {}
